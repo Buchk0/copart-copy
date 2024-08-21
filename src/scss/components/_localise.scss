@@ -1,0 +1,58 @@
+.localise {
+
+  &__label {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  &__text {
+    color: #fff;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  &__drop_icon {
+    color: #fff;
+    width: 15px;
+    height: 15px
+  }
+
+  &__popup {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    top: 70px;
+    right: 120px;
+    width: 220px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .popup {
+
+    &__triangle {
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+	    border: 30px solid transparent;
+	    border-bottom: 30px solid #fff;
+      position: absolute;
+      top: -40px;
+    }
+
+    &__title {
+      font-size: 19px;
+      padding-bottom: 20px;
+    }
+
+    &__text {
+      font-size: 12px;
+      text-align: center;
+      padding-bottom: 15px;
+    }
+  }
+}

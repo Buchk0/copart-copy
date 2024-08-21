@@ -1,0 +1,43 @@
+@import '../../scss/variables.scss';
+
+.root {
+  position: relative;
+  // left: -120px;
+  grid-column: span 3;
+  display: flex;
+}
+
+.input {
+  border: 3px solid (0, 0, 0, 0.1);
+  padding: 12px 20px 12px 30px;
+  border-radius: 5px;
+  width: 60%;
+  &:focus {
+    border: 3px solid (0, 0, 0, 0.2);
+  }
+}
+
+.searchIcon {
+  // padding-left: 10px;
+  width: 18px;
+  height: 16px;
+  opacity: 0.3;
+  position: absolute;
+  left: 12px ;
+  top: 15px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.findButton {
+      border: none;
+      padding: 5px 10px;
+      margin-left: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: $yellow;
+      color: black;
+}
