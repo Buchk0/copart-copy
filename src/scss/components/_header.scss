@@ -37,6 +37,11 @@
     align-items: center;
     grid-column: span 2;
     justify-content: flex-end;
+
+    .registration--link {
+      display: flex;
+      align-items: center;
+    }
     
     .registration--button {
       border: none;
@@ -44,7 +49,8 @@
       margin-left: 10px;
       cursor: pointer;
       border-radius: 5px;
-      font-size: 16px;
+      font-size: 14px;
+      font-weight: bold;
 
       &.reg {
         background-color: $yellow;

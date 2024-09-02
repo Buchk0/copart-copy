@@ -36,18 +36,58 @@
     width: 180px;
     height: 115px;
     position: relative;
+  }
 
+  &__name {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+
+    &_area {
+      width: 100%;
+      display: flex;
+    }
   }
 
   &__section_title {
     font-size: 16px;
     color: #475363;
+    padding-bottom: 10px;
   }
 
-
-  &__email_area {
+  &__email {
     width: 50vw;
+    padding: 15px 0;
   }
+
+  &__checkbox {
+    display: flex;
+    width: 50vw;
+    align-items: flex-start;
+    padding: 25px 0;
+
+    &_text {
+      padding: 0;
+    }
+  }
+
+  &__finish {
+    width: 50vw;
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+
+    &_button {
+      border: none;
+      padding: 10px 20px;
+      margin-left: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 16px;
+      background-color: $yellow;
+      color: black;
+  }
+ }
 }
 
 .text--sign {
@@ -101,4 +141,35 @@
   text-align: center;
  }
 }
+
+&_name {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+}
+
+&_email {
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+
+  &:focus {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+}
+
+&_checkbox {
+  margin: 5px 10px 0 0;
+}
+}
+
+.first {
+  margin-right: 20px;
 }

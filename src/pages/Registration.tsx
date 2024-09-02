@@ -77,18 +77,20 @@ const Registration: React.FC = () => {
           </label>
           </div>
         </div>
-        <b className="registration__section_title">Preferred Full Name<b className='text--sign'>*</b></b>
         <div className="registration__name">
-        <input type="text" className="registration__name_area first" />
-        <input type="text" className="registration__name_area last" />
+        <b className="registration__section_title">Preferred Full Name<b className='text--sign'>*</b></b>
+        <div className="registration__name_area">
+        <input type="text" className="input_name first" />
+        <input type="text" className="input_name last" />
         </div>
-        <b className="registration__section_title">Email<b className='text--sign'>*</b></b>
+        </div>
         <div className="registration__email">
-        <input type="text" className="registration__email_area" />
+        <b className="registration__section_title">Email<b className='text--sign'>*</b></b>
+        <input type="text" className="input_email" />
         </div>
-        <div className="registration___checkbox">
-          <input type="text" className="registration__checkbox_input" />
-          <p className="registration__text">By clicking this box, I agree that I am at least 18 years of age and that I have read and agreed to the Copart Member Terms and Conditions, Website Terms of Service, and . *</p>
+        <div className="registration__checkbox">
+          <input type="checkbox" className="input_checkbox" />
+          <p className="registration__text registration__checkbox_text">By clicking this box, I agree that I am at least 18 years of age and that I have read and agreed to the Copart Member Terms and Conditions, Website Terms of Service, and . <b className='text--sign'>*</b></p>
         </div>
         <div className="registration__finish">
           <button className="registration__finish_button">Create Copart Accoount</button>

@@ -17,8 +17,12 @@ const Header: React.FC = () => {
         <Search />
         <div className="header__registration">
           <Localise />
+          <Link to='/registraiton' className='registration--link'>
           <button className="registration--button reg">Register</button>
+          </Link>
+          <Link to='/sign' className="registration--link">
           <button className="registration--button sig">Sign In</button>
+          </Link>
         </div>
       </div>
     </div>

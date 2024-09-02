@@ -8,12 +8,12 @@
 }
 
 .input {
-  border: 3px solid (0, 0, 0, 0.1);
+  border: 2px solid rgba(0, 0, 0, 0.3);
   padding: 12px 20px 12px 30px;
   border-radius: 5px;
   width: 60%;
   &:focus {
-    border: 3px solid (0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -37,7 +37,8 @@
       margin-left: 10px;
       cursor: pointer;
       border-radius: 5px;
-      font-size: 16px;
+      font-size: 14px;
       background-color: $yellow;
       color: black;
+      font-weight: bold;
 }
