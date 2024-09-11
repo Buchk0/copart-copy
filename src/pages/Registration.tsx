@@ -1,14 +1,53 @@
-import React from 'react'
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import {
+  setBusinessOption,
+  setIndividualOption,
+  setName,
+  setSurname,
+  setEmail,
+  setTermsOption,
+  validateForm,
+  setDirtyField,
+} from '../redux/slices/registrationSlice';
+import { RootState } from '../redux/store';
+import TextInput from '../components/TextInput';
+
 const Registration: React.FC = () => {
+  const dispatch = useDispatch();
+  const {
+    businessOption,
+    individualOption,
+    name,
+    surname,
+    email,
+    termsOption,
+    nameDirty,
+    optionsError,
+    surnameDirty,
+    emailDirty,
+    nameError,
+    surnameError,
+    emailError,
+    termsOptionError,
+    validForm,
+  } = useSelector((state: RootState) => state.registration);
+
+  const handleSubmit = () => {
+    dispatch(validateForm());
+    if (validForm) {
+    }
+  };
   return (
     <div className="registration">
       <div className="registration__container">
         <h1 className="registration__title">Get Started</h1>
         <p className="registration__text"><b className='text--sign'>*</b>All are required</p>
         <b className="registration__section_title">Do you plan to bid as<b className='text--sign'>*</b>:</b>
+        {optionsError && (<b className='registration__error'>{optionsError}</b>)}
         <div className="registration__inputs_section">
           <div className="registration__input_container business">
-            <input type="checkbox" id='business__checkbox' />   
+            <input type="checkbox" id='business__checkbox' checked={businessOption} onChange={() => dispatch(setBusinessOption())} />   
             <label htmlFor="business__checkbox" className='input__label'>
             <svg 
           className='business__svg'
@@ -48,7 +87,7 @@ const Registration: React.FC = () => {
               </label>                                           
         </div>
           <div className="registration__input_container individual">
-            <input type="checkbox" id='individual__checkbox' />
+            <input type="checkbox" id='individual__checkbox' checked={individualOption} onChange={() => dispatch(setIndividualOption())} />
             <label htmlFor="individual__checkbox" className='input__label'><svg
           className='individual__svg'
            viewBox="0 0 24 24"
@@ -80,20 +119,42 @@ const Registration: React.FC = () => {
         <div className="registration__name">
         <b className="registration__section_title">Preferred Full Name<b className='text--sign'>*</b></b>
         <div className="registration__name_area">
-        <input type="text" className="input_name first" />
-        <input type="text" className="input_name last" />
+          <div className="registration__name_container">
+          <TextInput label='Name'
+        value={name}
+        onBlur={() => dispatch(setDirtyField({field: 'name'}))}
+        onChange={(e) => dispatch(setName(e.target.value))}
+        error={nameDirty ? nameError : null}
+        type='name' />
+          </div>
+          <div className="registration__name_container">
+          <TextInput label='Surname'
+        value={surname}
+        onBlur={() => dispatch(setDirtyField({field: 'surname'}))}
+        onChange={(e) => dispatch(setSurname(e.target.value))}
+        error={surnameDirty ? surnameError : null}
+        type='surname' />
+          </div>
         </div>
         </div>
         <div className="registration__email">
         <b className="registration__section_title">Email<b className='text--sign'>*</b></b>
-        <input type="text" className="input_email" />
+        <TextInput label='Email'
+        value={email}
+        onBlur={() => dispatch(setDirtyField({field: 'email'}))}
+        onChange={(e) => dispatch(setEmail(e.target.value))}
+        error={emailDirty ? emailError : null}
+        type='email' />
         </div>
+        <div className="registration__terms">
         <div className="registration__checkbox">
-          <input type="checkbox" className="input_checkbox" />
+          <input checked={termsOption} onChange={() => dispatch(setTermsOption())} type="checkbox" className="input_checkbox" />
           <p className="registration__text registration__checkbox_text">By clicking this box, I agree that I am at least 18 years of age and that I have read and agreed to the Copart Member Terms and Conditions, Website Terms of Service, and . <b className='text--sign'>*</b></p>
         </div>
+        {termsOptionError && (<b className='registration__error'>{termsOptionError}</b>)}
+        </div>
         <div className="registration__finish">
-          <button className="registration__finish_button">Create Copart Accoount</button>
+          <button onClick={() => handleSubmit()} className="registration__finish_button">Create Copart Accoount</button>
         </div>
       </div>
     </div>
