@@ -1,0 +1,98 @@
+[
+  {
+    "imgUrl": "https://cs.copart.com/v1/AUTH_svc.pdoc00001/ids-c-prod-lpp/0724/403856dd204644818999060e0aa20bba_ful.jpg",
+    "lot_number": 65614064,
+    "name": "2014 AUDI A4 ALLROAD PREMIUM PLUS",
+    "price": "2,950",
+    "vin": "WA1UFAFL5EA******",
+    "title_code": "NH - CERTIFICATE OF TITLE (P)",
+    "odometer": {
+      "value": 223264,
+      "unit": "mi",
+      "status": "ACTUAL"
+    },
+    "primary_damage": "MINOR DENT/SCRATCHES",
+    "cylinders": 4,
+    "body_style": "4DR SPOR",
+    "color": "WHITE",
+    "engine_type": "2.0L 4",
+    "transmission": "AUTOMATIC",
+    "drive": "All wheel drive",
+    "vehicle_type": "AUTOMOBILE",
+    "fuel": "FLEXIBLE FUEL",
+    "keys": "YES",
+    "highlights": "Run and Drive"
+  },
+  {
+    "imgUrl": "https://cs.copart.com/v1/AUTH_svc.pdoc00001/lpp/0924/5303391ad20247e3a1835529d3422eae_ful.jpg",
+    "lot_number": 73518294,
+    "vin": "1HGCM82633A******",
+    "name": "2014 GMC TERRAIN SLE",
+    "price": "3,200",
+    "title_code": "TX - CERTIFICATE OF TITLE",
+    "odometer": {
+      "value": 150302,
+      "unit": "mi",
+      "status": "ACTUAL"
+    },
+    "primary_damage": "FRONT END",
+    "cylinders": 6,
+    "body_style": "SEDAN 4DR",
+    "color": "BLACK",
+    "engine_type": "3.0L V6",
+    "transmission": "AUTOMATIC",
+    "drive": "Front wheel drive",
+    "vehicle_type": "AUTOMOBILE",
+    "fuel": "GAS",
+    "keys": "YES",
+    "highlights": "Run and Drive"
+  },
+  {
+    "imgUrl": "https://cs.copart.com/v1/AUTH_svc.pdoc00001/lpp/0824/cbbbbaa8c2ef4395a95f4e7b7ec5825d_ful.jpg",
+    "lot_number": 87943123,
+    "vin": "2T3BFREV0EW******",
+    "name": "2018 RAM 2500 LARAMIE",
+    "price": "9,500",
+    "title_code": "CA - SALVAGE CERTIFICATE",
+    "odometer": {
+      "value": 86500,
+      "unit": "mi",
+      "status": "ACTUAL"
+    },
+    "primary_damage": "REAR END",
+    "cylinders": 4,
+    "body_style": "SUV",
+    "color": "SILVER",
+    "engine_type": "2.5L 4",
+    "transmission": "AUTOMATIC",
+    "drive": "Front wheel drive",
+    "vehicle_type": "AUTOMOBILE",
+    "fuel": "GAS",
+    "keys": "NO",
+    "highlights": "Non-Run"
+  },
+  {
+    "imgUrl": "https://cs.copart.com/v1/AUTH_svc.pdoc00001/lpp/0924/144cdfc98d6a481da5afacd72e6df96f_ful.jpg",
+    "lot_number": 65614064,
+    "vin": "WA1UFAFL5EA******",
+    "name": "2018 DODGE JOURNEY SXT",
+    "price": "8,700",
+    "title_code": "NH - CERTIFICATE OF TITLE (P)",
+    "odometer": {
+      "value": 223264,
+      "unit": "mi",
+      "status": "ACTUAL"
+    },
+    "primary_damage": "MINOR DENT/SCRATCHES",
+    "cylinders": 4,
+    "body_style": "4DR SPOR",
+    "color": "WHITE",
+    "engine_type": "2.0L 4",
+    "transmission": "AUTOMATIC",
+    "drive": "All wheel drive",
+    "vehicle_type": "AUTOMOBILE",
+    "fuel": "FLEXIBLE FUEL",
+    "keys": "YES",
+    "highlights": "Run and Drive"
+  }
+]
